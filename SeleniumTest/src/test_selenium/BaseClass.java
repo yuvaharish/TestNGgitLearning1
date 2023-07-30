@@ -19,13 +19,16 @@ public class BaseClass {
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
 	}
 	
 	public void url(String url) {
+		//this is shoban url
 		driver.get(url);
 	}
 	
 	public void typeText(WebElement element,String text) {
+		//this is shoban sendkeys
 		element.sendKeys(text);
 	}
 	
