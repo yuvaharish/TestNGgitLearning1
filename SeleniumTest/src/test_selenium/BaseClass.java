@@ -34,6 +34,9 @@ public class BaseClass {
 	
 	
 	public void elementClick(WebElement element) {
+		//Testing the branch
+		driver.get(url);
+		element.sendKeys(text);
 		element.click();
 	}
 	
