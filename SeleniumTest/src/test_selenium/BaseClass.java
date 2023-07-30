@@ -34,9 +34,7 @@ public class BaseClass {
 	
 	
 	public void elementClick(WebElement element) {
-		//Testing the branch
-		driver.get(url);
-		element.sendKeys(text);
+	
 		element.click();
 	}
 	
@@ -47,7 +45,10 @@ public class BaseClass {
 		po.load(fo);
 		String property = po.getProperty(Key);
 		return property;
-	
+
+			//Testing the branch
+		driver.get(url);
+		element.sendKeys(text);
 	}
 	
 }
