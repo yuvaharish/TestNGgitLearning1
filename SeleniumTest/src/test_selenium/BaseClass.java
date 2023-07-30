@@ -34,17 +34,13 @@ public class BaseClass {
 	
 	
 	public void elementClick(WebElement element) {
+	
 		element.click();
 	}
 	
 	public String pro(String Key) throws IOException {
-		File file = new File("C:\\Users\\jacki\\eclipse-workspace\\Shoban\\SeleniumTest\\src\\test_selenium\\loginCrediantials.properties");
-		FileInputStream fo = new FileInputStream(file);
-		Properties po = new Properties();
-		po.load(fo);
-		String property = po.getProperty(Key);
-		return property;
 	
+
 	}
 	
 }
